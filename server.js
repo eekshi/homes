@@ -310,7 +310,7 @@ function insightBotResponseFunction(basicDetails) {
 
 function userInfo(id) {
 	return new Promise(function (resolve, reject) {
-		request('https://graph.facebook.com/v3.2/' + id + '?fields=id,first_name,last_name,profile_pic&access_token=EAAGZB98Byw60BAC4YoHeu2Tp6yWD5EWex5ZBXxGYil5vs93gPhpZCADZCbkD9JkdChmTHZAUZC0y0DKXdQKr38FCCZBq9viZBo5NkXZCWyExoHz4GxKPTL6aHwUwfI7QTQmmzIChR8ibwvfFqSCFvUWQFgAMvFoG2hmrAZB7v9g6jiLQZDZD',
+		request('https://graph.facebook.com/v3.2/' + id + '?fields=id,first_name,last_name,profile_pic&access_token=EAAJNKHeA1doBAMaoJFD5uydFsz7UJc6l0jRTctWEvLUHEdLZApFLU9ES14DNRFS00veuR9G8Qj8MkyMRB7vZBPltDSWvz4VEbuI07LMpGwEZCldhoEbYybm4Ar1I2FUZBYqq7UK7yO6Kml4tiN1yfknCZC3ExfBYZBxrYWdK8FNgZDZD',
 			async function (err, response, body) {
 				if (err) {
 					reject({ "error": err })
@@ -341,7 +341,7 @@ function loginSuccessMessage(id, text) {
 function typingOn(id) {
 	var dataPost = {
 		url: 'https://graph.facebook.com/v2.6/me/messages',
-		qs: { access_token: 'EAAE0pZBFEZCDQBAAkdtliYnjjua0W44XscD6gXzOySdXwD4Gg69ZCZAbmnfQ16vO60ZAB0viM3z108mAZBvWIy3Y6d558At6OnZCXq9bif9Wu4B3bRf2ZBaYEp79Uaj2ZBo1OB4tz2mgcQMqwJaLs7rWv3yaaGwwYHO8l69UhRuhZA7ZAeZB6ZCu3ANxi' },
+		qs: { access_token: 'EAAJNKHeA1doBAMaoJFD5uydFsz7UJc6l0jRTctWEvLUHEdLZApFLU9ES14DNRFS00veuR9G8Qj8MkyMRB7vZBPltDSWvz4VEbuI07LMpGwEZCldhoEbYybm4Ar1I2FUZBYqq7UK7yO6Kml4tiN1yfknCZC3ExfBYZBxrYWdK8FNgZDZD' },
 		method: 'POST',
 		json: {
 			recipient: { id: id },
