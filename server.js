@@ -327,7 +327,7 @@ function loginSuccessMessage(id, text) {
 	console.log("***************************************************")
 	var dataPost = {
 		url: 'https://graph.facebook.com/v2.6/me/messages',
-		qs: { access_token: 'EAAGZB98Byw60BAC4YoHeu2Tp6yWD5EWex5ZBXxGYil5vs93gPhpZCADZCbkD9JkdChmTHZAUZC0y0DKXdQKr38FCCZBq9viZBo5NkXZCWyExoHz4GxKPTL6aHwUwfI7QTQmmzIChR8ibwvfFqSCFvUWQFgAMvFoG2hmrAZB7v9g6jiLQZDZD' },
+		qs: { access_token: 'EAAJNKHeA1doBAMaoJFD5uydFsz7UJc6l0jRTctWEvLUHEdLZApFLU9ES14DNRFS00veuR9G8Qj8MkyMRB7vZBPltDSWvz4VEbuI07LMpGwEZCldhoEbYybm4Ar1I2FUZBYqq7UK7yO6Kml4tiN1yfknCZC3ExfBYZBxrYWdK8FNgZDZD' },
 		method: 'POST',
 		json: {
 			recipient: { id: id },
